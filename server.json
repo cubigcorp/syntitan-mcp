@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.syntitan/syntitan-mcp",
+  "description": "Syntitan MCP server — connect Claude and other MCP clients to Syntitan, the AI-Ready Data Platform that fills the missing layer between enterprise data management and AI execution.",
+  "repository": {
+    "url": "https://github.com/cubigcorp/syntitan-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://syntitan.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.syntitan.ai/mcp"
+    }
+  ]
+}
