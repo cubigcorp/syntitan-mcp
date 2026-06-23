@@ -23,18 +23,18 @@ Cursor, VS Code, Claude Code, and other MCP clients support remote MCP servers �
 
 | Tool (title) | Description | readOnlyHint | destructiveHint |
 |---|---|---|---|
-| Estimate Dataset Run | Preview the estimated credit cost and processing time for a synthesis run before starting it | true | — |
-| Get AI Readiness Detail | Get column-level analysis for a quality category | true | — |
-| Get AI Readiness Summary | Get the overall AI readiness summary for a dataset: score, trust breakdown, PII masking status, and columns with the most missing values | true | — |
-| Get Column Profile | Get detailed quality profile for a single column: stats (null/unique count), privacy flags, outlier/type-mismatch indicators, and recommended synthesis modules | true | — |
-| Get Dataset History | Get the full version history of a dataset: releases and intermediate snapshots, each with version, author, ISO 8601 creation time in UTC (infer user timezone from context and convert; otherwise use UTC), and a summary of what changed (including masked PII entities and applied refinement modules) | true | — |
-| Get Dataset Run Options | Get available synthesis options for a dataset: refinement modules (with recommended flags and disabled status) and unmasked PII entity types eligible for redaction (e.g | true | — |
-| Get Dataset Run Status | Get the current status of a synthesis run | true | — |
-| Get Dataset Sample Rows | Fetch sample rows from a dataset, optionally filtered | true | — |
-| Get Dataset Schema | Get the schema of a dataset: column names, roles, inferred types, null percentages, and privacy flags | true | — |
-| Get Diagnosis Guide | Reference guide for interpreting dataset diagnosis metadata (trust_score, target_contribution, conciseness, recommended_modules, privacy flags) | true | — |
-| List Datasets | List datasets the current user can access, scoped by their dataset shares and organization role | true | — |
-| Start Dataset Run | Start a synthesis run for the dataset | false | false |
+| Estimate Refinement Credits | Preview the estimated credits and time required before running a refinement | true | — |
+| Get AI Readiness Detail | Break down a specific AI Readiness category to show which columns contributed and by how much | true | — |
+| Get AI Readiness Summary | Return a dataset's overall AI Readiness score with per-category scores (Privacy, Conciseness, …) and the top-priority issues | true | — |
+| Get Column Profile | Return detailed statistics for a single column, such as distinct/top values, missing rate, and example values | true | — |
+| Get Dataset History | Return a dataset's full version history, including each version's release status, author, timestamp, and changes (masked PII entities and applied refinement modules) | true | — |
+| Get Refinement Options | Return the available preprocessing options for a dataset, such as preprocessing modules and de-identification targets | true | — |
+| Get Refinement Status | Return the progress and status of a running or completed refinement | true | — |
+| Get Dataset Sample Rows | Return a sample of rows from a dataset with PII columns auto-masked; refuses if unmasked PII is present | true | — |
+| Get Dataset Schema | Return a dataset's column structure — type, missing values, PII flags — without exposing PII column values | true | — |
+| Get Diagnosis Guide | Return guidance on how to interpret AI Readiness diagnostic metrics and scores | true | — |
+| List Datasets | List datasets the user can access, with each one's latest version, row/column counts, AI Readiness score, and last-modified time | true | — |
+| Start Refinement | Run preprocessing/de-identification on a dataset (consumes credits); results are saved as a new snapshot | false | false |
 
 ## Example use cases
 
