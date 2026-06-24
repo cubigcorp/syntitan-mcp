@@ -6,8 +6,8 @@
     "url": "https://github.com/cubigcorp/syntitan-mcp",
     "source": "github"
   },
-  "version": "1.0.1",
-  "websiteUrl": "https://syntitan.ai",
+  "version": "1.0.2",
+  "websiteUrl": "https://cubig.ai/syntitan/",
   "icons": [
     {
       "src": "https://raw.githubusercontent.com/cubigcorp/syntitan-mcp/main/logo.png",
