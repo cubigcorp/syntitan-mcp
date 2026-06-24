@@ -6,8 +6,15 @@
     "url": "https://github.com/cubigcorp/syntitan-mcp",
     "source": "github"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://syntitan.ai",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/cubigcorp/syntitan-mcp/main/logo.png",
+      "mimeType": "image/png",
+      "sizes": ["400x400"]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",
