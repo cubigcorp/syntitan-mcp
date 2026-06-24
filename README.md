@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="Syntitan" width="200">
+</p>
+
 # Syntitan MCP Server
 
 The official [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server for **Syntitan** by CUBIG — the AI-Ready Data Platform that fills the missing layer between enterprise data management and AI execution. It lets Claude and other MCP-compatible clients (Cursor, VS Code, Claude Code, ChatGPT, etc.) securely connect to Syntitan through natural language.
